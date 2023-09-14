@@ -13,7 +13,11 @@ For research, teaching, and scholarship purposes, the corpus is available under 
 
 ## Corpus Contents
 
-The csv file contains text extracted from privacy policies that contains candidate date instances labeled into 'updated date', 'effective date' and 'other' dates. The labeling was conducted by one of the authors of the paper and verified by another author. 
+The csv file contains text extracted from privacy policies that contains candidate date instances labeled into 'updated date', 'effective date' and 'other' dates. The labeling was conducted by one of the authors of the paper and verified by another author. The date isntnaces were extracted with the following regex pattern: 
+
+```
+20[0-2][0-9]|19\d{2}|\'\d{2}|\d{1,2}\/\d{1,2}\/\d{2,4}|\d{1,2}\.\d{1,2}\.\d{2,4}|\d{1,2}\-\d{1,2}\-\d{2,4}
+```
 
 If you make use of this dataset in your reserach please cite our paper:
 
